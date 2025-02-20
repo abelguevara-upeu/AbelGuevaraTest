@@ -5,6 +5,19 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
+/**
+ * Representa la solicitud para crear o actualizar un diagnóstico.
+ * <p>
+ * Esta clase se utiliza en la capa de DTO para recibir y validar los datos de entrada en las peticiones HTTP.
+ * </p>
+ * <p>
+ * Los campos que contiene son:
+ * <ul>
+ *   <li>{@code dsDiagnostico}: La descripción del diagnóstico. Es obligatorio y está limitado a 255 caracteres.</li>
+ *   <li>{@code tpDiagnostico}: El tipo del diagnóstico, que debe ser "1" (CIE10) o "2" (CIE11).</li>
+ * </ul>
+ * </p>
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class DiagnosticoRequest {
 

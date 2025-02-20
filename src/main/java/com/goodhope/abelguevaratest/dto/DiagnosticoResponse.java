@@ -1,5 +1,12 @@
 package com.goodhope.abelguevaratest.dto;
 
+/**
+ * Representa la respuesta de un diagnóstico.
+ * <p>
+ * Esta clase encapsula la información básica de un diagnóstico,
+ * incluyendo el código, la descripción y el tipo del diagnóstico.
+ * </p>
+ */
 public class DiagnosticoResponse {
 
     private int cdDiagnostico;

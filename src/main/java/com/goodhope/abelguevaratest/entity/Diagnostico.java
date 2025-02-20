@@ -48,7 +48,7 @@ public class Diagnostico {
         this.tpDiagnostico = tpDiagnostico;
     }
 
-    //Método para actualizar campos específicos
+    //Actualizar campos específicos
     public void updateFields(String dsDiagnostico, String tpDiagnostico) {
         if (this.dsDiagnostico != null) {
             this.setDsDiagnostico(this.dsDiagnostico);

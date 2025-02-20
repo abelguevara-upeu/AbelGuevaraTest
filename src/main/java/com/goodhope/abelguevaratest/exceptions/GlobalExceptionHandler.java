@@ -11,6 +11,13 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Manejador global de excepciones para la aplicación.
+ * <p>
+ * Esta clase intercepta las excepciones lanzadas en los controladores y retorna respuestas
+ * estandarizadas en formato {@link ApiResponse} junto con el código de estado HTTP correspondiente.
+ * </p>
+ */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
